@@ -1,0 +1,60 @@
+@keyframes nav {
+    from {
+        transform: translateX(350px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes main {
+    from {
+        opacity: 0;
+        transform: translateY(400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu li:hover {
+    background-image: url(../assets/purple-hover.svg);
+    background-repeat: no-repeat;
+    color: var(--text-color-menu-mobile-hover);
+    font-weight: 700;
+}
+
+.logo:hover {
+    cursor: pointer;
+    scale: 1.4;
+}
+
+.desktop-ul li:hover {
+    color: var(--text-color-menu-mobile-hover);
+    cursor: pointer;
+    font-weight: 800;
+    text-decoration: underline 3px purple;
+}
+
+.coffee-button:hover {
+    background-color: var(--button);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--button);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6038bd;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--border);
+}

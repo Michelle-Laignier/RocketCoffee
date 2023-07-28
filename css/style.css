@@ -1,0 +1,124 @@
+@import url(../css/effects.css);
+
+:root {
+    font-size: 62.5%;
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --text-color-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile-hover: #E1E1E6;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--backgrond);
+    color: var(--text-color);
+}
+
+.header-mobile {
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-around;
+    height: 9.5rem;
+}
+
+.header-desktop {
+    display: none;
+}
+
+.menu {
+    animation: nav 1s linear;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.menu li {
+    border-bottom: 1px solid var(--border);
+    color: var(--text-color-menu-mobile);
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 1.6rem 0 1.6rem 2.5rem;
+}
+
+main {
+    animation: main 0.7s linear;
+    text-align: -webkit-center;
+    position: absolute;
+    z-index: 2;
+}
+
+#subtitle {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    margin: 8.8rem 2.7rem 8.8rem;
+    text-align: center;
+}
+
+.coffee-button {
+    background: transparent;
+    background-image: url(../assets/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 14.5rem;
+    border: 1px solid var(--button);
+    border-radius: 6px;
+    color: #FFF;
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 800;
+    gap: 1rem;
+    letter-spacing: 0.22px;
+    margin-bottom: 9.8rem;
+    padding: 1rem 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin-bottom: 0.6rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    color: var(--backgrond);
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.blur {
+    background: #996DFF;
+    border-radius: 321px;
+    bottom: 0;
+    filter: blur(200px);
+    height: 321px;
+    position: absolute;
+    width: 321px;
+    z-index: -1;
+}
+
+.cups-mobile {
+    width: 100%;
+}
+
+.cups-desktop {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
